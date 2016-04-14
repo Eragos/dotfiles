@@ -3,4 +3,5 @@ bin/dfm chmod 0755
 
 README.md skip
 aliases skip
+functions skip
 tmux.start.sh skip
