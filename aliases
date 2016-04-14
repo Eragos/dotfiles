@@ -19,8 +19,16 @@ alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
-alias la='ls -la'
-alias ls='ls -GFh'
+
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+	colorflag="--color"
+else # OS X `ls`
+	colorflag="-G"
+fi
+
+alias la='ls -laF ${colorflag}'
+alias ls='ls -Fh ${colorflag}'
 
 alias tmux='tmux -2'
 
