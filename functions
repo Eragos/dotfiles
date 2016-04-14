@@ -1,5 +1,5 @@
 #Docker: bash into running Docker container
-dockerbash() {
+dockersh() {
     docker exec -it $1 bash
 }
 
