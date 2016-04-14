@@ -1,1 +1,6 @@
+bin recurse
+bin/dfm chmod 0755
+
 README.md skip
+aliases skip
+tmux.start.sh skip
