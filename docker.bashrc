@@ -23,7 +23,6 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
-# load functions 
+# load functions & aliases
 [[ -f "/.docker.functions" ]] && source "/.docker.functions"
 [[ -f "/.docker.aliases" ]] && source "/.docker.aliases"
-[[ -f "/.docker.container" ]] && source "/.docker.container"
