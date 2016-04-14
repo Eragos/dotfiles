@@ -9,7 +9,7 @@ alias ~='cd ~'
 alias d='du -h -d=1'
 alias g='git'
 alias h='history'
-alias udot='cd ~/.dotfiles/ && git pull && bin/dfm install'
+alias udot='pushd ~/.dotfiles/ && git pull && bin/dfm install && popd'
 
 # defaults
 alias df='df -h'
