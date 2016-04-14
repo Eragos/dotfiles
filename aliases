@@ -10,6 +10,7 @@ alias d='du -h -d=1'
 alias g='git'
 alias h='history'
 alias udot='pushd ~/.dotfiles/ && git pull && bin/dfm install && source ~/.dotfiles/aliases && source ~/.dotfiles/functions && popd'
+alias ipt='iptables -L -n --line-numbers'
 
 # defaults
 alias df='df -h'
