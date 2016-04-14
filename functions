@@ -1,6 +1,10 @@
 #Docker: bash into running Docker container
 dockersh() {
-    docker exec -it $1 bash
+    docker cp ~/.dotfiles/docker.bashrc $1:/.docker.bashrc
+    docker cp ~/.dotfiles/aliases $1:/.docker.aliases
+    docker cp ~/.dotfiles/functions $1:/.docker.functions
+
+    docker exec -it $1 bash --rcfile /.docker.bashrc
 }
 
 #Docker: bash into running Docker container
