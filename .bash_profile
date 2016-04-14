@@ -2,7 +2,8 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
-#PATH=$PATH:$HOME/bin:/opt/local/bin:/opt/local/sbin:/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:
+# path
+PATH=$PATH:$HOME/bin:
 
 # colors
 export CLICOLOR=1
