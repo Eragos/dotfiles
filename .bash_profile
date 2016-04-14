@@ -27,4 +27,7 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
+# load functions 
+[[ -f "$HOME/.dotfiles/functions" ]] && source "$HOME/.dotfiles/functions"
+
 [[ -f "$HOME/.dotfiles/.commonrc" ]] && source "$HOME/.dotfiles/.commonrc"
