@@ -3,6 +3,6 @@
 
 if [ ! "$TERM_PROGRAM" = "iTerm.app" ]; then
     if [ -z "$TMUX" ]; then
-        (tmux ls | grep -vq attached && tmux -2 attach-session -t main) ||  tmux -2 new-session -t main
+        (tmux ls | grep -vq attached && tmux -2 attach-session -t main) ||  tmux -2 new-session -s main
     fi
 fi
