@@ -1,4 +1,7 @@
 
+# Solarized (mostly) dark skin for Midnight Commander
+export MC_SKIN=$HOME/.config/mc/skins/solarized.ini
+
 [[ -f "$HOME/.dotfiles/aliases" ]] && source "$HOME/.dotfiles/aliases"
 
 if [ ! "$TERM_PROGRAM" = "iTerm.app" ]; then

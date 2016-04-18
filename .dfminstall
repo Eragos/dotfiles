@@ -1,4 +1,5 @@
 bin recurse
+.config recurse
 bin/dfm chmod 0755
 
 README.md skip
