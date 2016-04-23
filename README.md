@@ -30,3 +30,9 @@ For more information, check out the [wiki](http://github.com/justone/dotfiles/wi
 	or
 	$ updot
 
+
+## Dependencies
+
+tmux: To show mem, cpu, load stats, you have to install tmux-mem-cpu-load (https://github.com/thewtex/tmux-mem-cpu-load)
+
+
