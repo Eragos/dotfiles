@@ -29,5 +29,4 @@ shopt -s checkwinsize
 
 # load functions 
 [[ -f "$HOME/.dotfiles/functions" ]] && source "$HOME/.dotfiles/functions"
-
 [[ -f "$HOME/.dotfiles/.commonrc" ]] && source "$HOME/.dotfiles/.commonrc"
