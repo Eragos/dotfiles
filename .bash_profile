@@ -2,6 +2,9 @@
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
 
+# switch to zsh if installed
+[ -z "$ZSH_VERSION" ] && export SHELL=/bin/zsh && exec /bin/zsh -l
+
 # path
 PATH=$PATH:$HOME/bin:
 
