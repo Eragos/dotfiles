@@ -1,6 +1,8 @@
 bin recurse
 .config recurse
+
 bin/dfm chmod 0755
+.tmux/zoom 0755
 
 README.md skip
 aliases skip
