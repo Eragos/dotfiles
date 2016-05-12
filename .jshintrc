@@ -93,7 +93,10 @@
         "$"         : false,
         "moment"    : false,
         "ko"        : false,
+        "ol"        : false,
+        "Clipboard" : false,
         "Cookies"   : false,
-        "bootbox"   : false
+        "bootbox"   : false,
+        "numeral"   : false
     }       
 }
