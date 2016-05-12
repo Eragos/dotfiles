@@ -12,6 +12,7 @@ alias h='history'
 alias udot='pushd ~/.dotfiles/ && git pull && bin/dfm install && source ~/.dotfiles/aliases && source ~/.dotfiles/functions && popd'
 alias ipt='iptables -L -n --line-numbers'
 alias nginxtest='docker exec -it nginx nginx -t'
+alias nginxreload='docker exec -it nginx nginx -s reload'
 
 # defaults
 alias df='df -h'
