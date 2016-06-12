@@ -97,6 +97,7 @@
         "Clipboard" : false,
         "Cookies"   : false,
         "bootbox"   : false,
-        "numeral"   : false
+        "numeral"   : false,
+        "jQuery"    : false
     }       
 }
