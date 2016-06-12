@@ -5,6 +5,7 @@ export MC_SKIN=$HOME/.config/mc/skins/solarized.ini
 export EDITOR=vim
 
 [[ -f "$HOME/.dotfiles/aliases" ]] && source "$HOME/.dotfiles/aliases"
+[[ -f "$HOME/.iterm2_shell_integration.zsh" ]] && source "$HOME/.iterm2_shell_integration.zsh"
 
 if [ ! "$TERM_PROGRAM" = "iTerm.app" ]; then
     if [ -z "$TMUX" ]; then
