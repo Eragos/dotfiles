@@ -1,3 +1,4 @@
 tmux.start.sh
 .config/mc/hotlist
 .vim/.netrwhist
+*.sublime-workspace

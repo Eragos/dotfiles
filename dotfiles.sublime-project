@@ -1,0 +1,13 @@
+{
+	"folders":
+	[
+		{
+			"path": "~/.dotfiles",
+			"file_exclude_patterns": ["*.tar.gz", "*.sublime-workspace"]
+		}
+	],
+    "settings":
+    {
+
+    }
+}
