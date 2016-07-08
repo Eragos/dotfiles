@@ -1,8 +1,6 @@
-git-sync:
+job:
   script:
   - eval `ssh-agent`
   - echo "$PUSH_KEY" | ssh-add -
   - git sync-remote https://github.com/Eragos/dotfiles.git ssh://git@git.eragos.net:10022/eragos/dotfiles.git
   - ssh-agent -k
-  only:
-  - triggers
