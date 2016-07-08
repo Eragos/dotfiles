@@ -1,3 +1,0 @@
-job:
-  script:
-  - git sync-remote https://github.com/Eragos/dotfiles.git ssh://git@git.eragos.net:10022/eragos/dotfiles.git
