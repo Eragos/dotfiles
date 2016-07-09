@@ -10,3 +10,4 @@ aliases skip
 docker.bashrc skip
 functions skip
 tmux.start.sh skip
+dotfiles.sublime-project skip
