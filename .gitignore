@@ -1,5 +1,4 @@
 *.sublime-workspace
 .config/mc/hotlist
 .vim/.netrwhist
-.tmux/sidebar/directory_widths.txt
 tmux.start.sh
