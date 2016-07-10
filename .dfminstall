@@ -5,9 +5,11 @@ bin/dfm chmod 0755
 .tmux/newpanes 0755
 .tmux/zoom 0755
 
-README.md skip
+.dotfiles/.iterm2 skip
+.DS_Store skip
 aliases skip
 docker.bashrc skip
-functions skip
-tmux.start.sh skip
 dotfiles.sublime-project skip
+functions skip
+README.md skip
+tmux.start.sh skip
