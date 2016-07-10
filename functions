@@ -9,6 +9,11 @@ udot() {
   cd $cwd
 }
 
+# will attach to existing tmux session, create new if one does not exist or just start bash if there is no tmux available.
+function ssht(){
+  ssh $* -t 'tmux a || tmux || /bin/bash'
+}
+
 #Docker: bash into running Docker container
 dockersh() {
     docker cp ~/.dotfiles/docker.bashrc $1:/.docker.bashrc
