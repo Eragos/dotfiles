@@ -3,6 +3,15 @@ bin recurse
 
 bin/dfm chmod 0755
 .tmux/newpanes 0755
+.tmux/prefix_highlight.tmux 0755
+.tmux/scripts/check_tmux_version.sh 0755
+.tmux/scripts/custom_tree.sh 0755
+.tmux/scripts/helpers.sh 0755
+.tmux/scripts/save_sidebar_width.sh 0755
+.tmux/scripts/toggle.sh 0755
+.tmux/scripts/tree_helpers.sh 0755
+.tmux/scripts/variables.sh 0755
+.tmux/sidebar.tmux 0755
 .tmux/zoom 0755
 
 .dotfiles/.iterm2 skip

@@ -1,0 +1,1 @@
+/Users/eragos/.dotfiles/.tmux/scripts	115
