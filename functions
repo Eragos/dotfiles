@@ -1,3 +1,14 @@
+# Update dotfiles
+udot() {
+  cwd=$(pwd)
+  cd ~/.dotfiles/
+  git pull
+  bin/dfm install 
+  source ~/.dotfiles/aliases 
+  source ~/.dotfiles/functions
+  cd $cwd
+}
+
 #Docker: bash into running Docker container
 dockersh() {
     docker cp ~/.dotfiles/docker.bashrc $1:/.docker.bashrc

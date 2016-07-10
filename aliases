@@ -9,7 +9,6 @@ alias ~='cd ~'
 alias d='du -h -d=1'
 alias g='git'
 alias h='history'
-alias udot='pushd ~/.dotfiles/ && git pull && bin/dfm install && source ~/.dotfiles/aliases && source ~/.dotfiles/functions && popd'
 alias ipt='iptables -L -n --line-numbers'
 alias nginxtest='docker exec -it nginx nginx -t'
 alias nginxreload='docker exec -it nginx nginx -s reload'
@@ -36,3 +35,4 @@ alias tmux='tmux -2'
 
 alias view='vim -p -R'
 alias vp='vim -p'
+
