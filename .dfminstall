@@ -2,6 +2,13 @@ bin recurse
 .config recurse
 
 bin/dfm chmod 0755
+.tmux/copycat/scripts/copycat_generate_results.sh 0755
+.tmux/copycat/scripts/copycat_git_special.sh 0755
+.tmux/copycat/scripts/copycat_jump.sh 0755
+.tmux/copycat/scripts/copycat_mode_bindings.sh 0755
+.tmux/copycat/scripts/copycat_mode_quit.sh 0755
+.tmux/copycat/scripts/copycat_mode_start.sh 0755
+.tmux/copycat/scripts/copycat_search.sh 0755
 .tmux/newpanes 0755
 .tmux/prefix_highlight.tmux 0755
 .tmux/scripts/check_tmux_version.sh 0755
