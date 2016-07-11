@@ -17,7 +17,7 @@ udot() {
   echo -e "$info"
   echo -e ""
 
-  if [ -n "$status" ]; then
+  if [ -z "$status" ]; then
     echo -e "Local changes:"
     echo -e "$gstatus"
     echo -e ""
