@@ -3,6 +3,8 @@ udot() {
   info=$(git --no-pager log --pretty="%h by %an <%ae> on %cd" -1 --abbrev-commit)
   local=$(git --no-pager log --pretty="%H" -1)
   remote=$(git ls-remote origin | awk "/HEAD/ {print \$1}")
+  gstatus=$(git status -s)
+
   echo -e ""
   echo -e '    ____      U  ___ u _____    _____              _     U _____ u ____    '
   echo -e '   |  _"\      \/"_ \/|_ " _|  |" ___|    ___     |"|    \| ___"|// __"| u '
@@ -14,6 +16,12 @@ udot() {
   echo -e ""
   echo -e "$info"
   echo -e ""
+
+  if [ "$status" != "" ]; then
+    echo -e "Local changes:"
+    echo -e "$gstatus"
+    echo -e ""
+  fi
 
   if [ "$local" = "$remote" ]; then
     echo "Already up to date :)"
