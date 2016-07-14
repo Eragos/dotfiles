@@ -337,6 +337,9 @@ set pastetoggle=<F1>
 " Define Mouse Mode
 "set mouse=a
 
+" run pathogen to manage your 'runtimepath' with ease.  (https://github.com/tpope/vim-pathogen)
+" In practical terms, pathogen.vim makes it super easy to install plugins and runtime files in their own private directories.
+execute pathogen#infect()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
