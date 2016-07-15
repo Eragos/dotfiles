@@ -61,6 +61,12 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
+" show line numbers
+set number
+
+" show cursor line
+set cursorline
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => VIM user interface
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -123,8 +129,15 @@ set tm=500
 syntax enable
 
 colorscheme desert
-"colorscheme hybrid-light
+"colorscheme monokai
+"colorscheme hybrid
 "set background=dark
+
+" set line number color
+hi LineNr ctermfg=102 ctermbg=237 cterm=NONE guifg=#90908a guibg=#3c3d37 gui=NONE
+
+" set cursor line color
+hi CursorLine ctermfg=NONE ctermbg=237 cterm=NONE guifg=NONE guibg=#3c3d37 gui=NONE
 
 " Set extra options when running in GUI mode
 if has("gui_running")
