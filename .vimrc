@@ -44,7 +44,8 @@
 " => General
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Sets how many lines of history VIM has to remember
-set history=700
+set history=1000
+set undolevels=1000 
 
 " Enable filetype plugins
 filetype plugin on
@@ -167,12 +168,12 @@ set noswapfile
 " => Text, tab and indent related
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Use spaces instead of tabs
-set expandtab
+"set expandtab
 
 " Be smart when using tabs ;)
 set smarttab
 
-" 1 tab == 4 spaces
+" 1 tab == 3 spaces
 set shiftwidth=3
 set tabstop=3
 
@@ -184,6 +185,11 @@ set tw=500
 set si "Smart indent
 set wrap "Wrap lines
 
+"set listchars to show special characters
+set list
+set listchars=tab:\▸\ ,trail:.,extends:#,nbsp:.,eol:¬
+hi SpecialKey ctermfg=8
+hi NonText ctermfg=8 guifg=gray
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
@@ -345,7 +351,6 @@ map <leader>q :e ~/buffer<cr>
 " Toggle paste mode on and off
 map <leader>pp :setlocal paste!<cr>
 set pastetoggle=<F1>
-
 
 " Define Mouse Mode
 "set mouse=a
