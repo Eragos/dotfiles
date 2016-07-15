@@ -187,9 +187,12 @@ set wrap "Wrap lines
 
 "set listchars to show special characters
 set list
-set listchars=tab:\▸\ ,trail:.,extends:#,nbsp:.,eol:¬
+"set listchars=tab:\▸\ ,trail:.,precedes:←,extends:→,nbsp:.,eol:¬
+set listchars=tab:\┆\ ,trail:.,precedes:←,extends:→,nbsp:.,eol:¬,space:⋅
 hi SpecialKey ctermfg=8
 hi NonText ctermfg=8 guifg=gray
+
+autocmd ColorScheme * highlight WhiteSpaces gui=undercurl guifg=LightGray | match WhiteSpaces / \+/
 
 """"""""""""""""""""""""""""""
 " => Visual mode related
