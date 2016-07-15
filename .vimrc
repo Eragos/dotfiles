@@ -122,6 +122,8 @@ set novisualbell
 set t_vb=
 set tm=500
 
+" Hide tabbar
+"set showtabline=0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Colors and Fonts
@@ -424,3 +426,12 @@ function! <SID>BufcloseCloseIt()
    endif
 endfunction
 
+" fast toogle beween normal and relative line numbers
+function! NumberToggle()
+  if(&relativenumber == 1)
+    set norelativenumber
+  else
+    set relativenumber
+  endif
+endfunc
+nnoremap <C-n> :call NumberToggle()<cr>
