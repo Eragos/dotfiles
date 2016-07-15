@@ -1,5 +1,7 @@
 # Update dotfiles
 udot() {
+  cwd=$(pwd)
+  cd ~/.dotfiles/
   info=$(git --no-pager log --pretty="%h by %an <%ae> on %cd" -1 --abbrev-commit)
   local=$(git --no-pager log --pretty="%H" -1)
   remote=$(git ls-remote origin | awk "/HEAD/ {print \$1}")
@@ -27,8 +29,6 @@ udot() {
     echo "Already up to date :)"
   else
     echo -e "Updating..."  
-    cwd=$(pwd)
-    cd ~/.dotfiles/
     git pull
     bin/dfm install 
     source ~/.dotfiles/aliases 
