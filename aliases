@@ -11,7 +11,7 @@ alias g='git'
 alias h='history'
 alias ipt='iptables -L -n --line-numbers'
 alias nginxtest='docker exec -it nginx nginx -t'
-alias nginxreload='docker exec -it nginx nginx -s reload'
+alias nginxreload='docker exec -it nginx /bin/bash -c "/usr/sbin/nginx -t && /usr/sbin/nginx -s reload"'
 
 # defaults
 alias df='df -h'

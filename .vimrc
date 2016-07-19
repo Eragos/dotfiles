@@ -71,6 +71,7 @@ set magic
 
 " Show matching brackets when text indicator is over them
 set showmatch
+
 " How many tenths of a second to blink when matching brackets
 set mat=2
 
@@ -145,7 +146,6 @@ set wrap "Wrap lines
 
 "set listchars to show special characters
 set list
-"set listchars=tab:\▸\ ,trail:.,precedes:←,extends:→,nbsp:.,eol:¬
 set listchars=tab:\┆\ ,trail:.,precedes:←,extends:→,nbsp:.,eol:¬,space:⋅
 hi SpecialKey ctermfg=8
 hi NonText ctermfg=8 guifg=gray
