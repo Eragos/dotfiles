@@ -10,7 +10,7 @@
     "bitwise"       : true,     // true: Prohibit bitwise operators (&, |, ^, etc.)
     "camelcase"     : false,    // true: Identifiers must be in camelCase
     "curly"         : true,     // true: Require {} for every new block or scope
-    "eqeqeq"        : true,     // true: Require triple equals (===) for comparison
+    "eqeqeq"        : false,     // true: Require triple equals (===) for comparison
     "forin"         : true,     // true: Require filtering for..in loops with obj.hasOwnProperty()
     "freeze"        : true,     // true: prohibits overwriting prototypes of native objects such as Array, Date etc.
     "immed"         : false,    // true: Require immediate invocations to be wrapped in parens e.g. `(function () { } ());`
@@ -47,7 +47,7 @@
     "esversion"     : 5,         // {int} Specify the ECMAScript version to which the code must adhere.
     "moz"           : false,     // true: Allow Mozilla specific syntax (extends and overrides esnext features)
                                  // (ex: `for each`, multiple try/catch, function expression…)
-    "evil"          : false,     // true: Tolerate use of `eval` and `new Function()`
+    "evil"          : true,     // true: Tolerate use of `eval` and `new Function()`
     "expr"          : false,     // true: Tolerate `ExpressionStatement` as Programs
     "funcscope"     : false,     // true: Tolerate defining variables inside control statements
     "globalstrict"  : false,     // true: Allow global "use strict" (also enables 'strict')
@@ -73,7 +73,7 @@
     "devel"         : true,     // Development/debugging (alert, confirm, etc)
     "dojo"          : false,    // Dojo Toolkit
     "jasmine"       : false,    // Jasmine
-    "jquery"        : false,    // jQuery
+    "jquery"        : true,    // jQuery
     "mocha"         : true,     // Mocha
     "mootools"      : false,    // MooTools
     "node"          : false,    // Node.js
@@ -90,14 +90,12 @@
 
     // Custom Globals
     "globals"       : {          // additional predefined global variables
-        "$"         : false,
         "moment"    : false,
         "ko"        : false,
         "ol"        : false,
         "Clipboard" : false,
         "Cookies"   : false,
         "bootbox"   : false,
-        "numeral"   : false,
-        "jQuery"    : false
+        "numeral"   : false
     }       
 }
