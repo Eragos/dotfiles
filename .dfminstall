@@ -28,10 +28,12 @@ bin/dfm chmod 0755
 
 .dotfiles/.iterm2 skip
 .DS_Store skip
+.gitmodules skip
 aliases skip
 docker.bashrc skip
 dotfiles.sublime-project skip
 dotfiles.sublime-workspace skip
 functions skip
+misc skip
 README.md skip
 tmux.start.sh skip
