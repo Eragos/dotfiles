@@ -22,7 +22,7 @@ This repo is a store my personal Debian and macOS dotfiles.
 * All vim, tmux, ... plugins are included as git-submodule. So you have the lastest version everytime you update via *udot* command.
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh.git) with fantastic [Cobalt2 theme](https://github.com/wesbos/Cobalt2-iterm.git).
 * A useful vim configuration with pathogen plugin manager and some plugins: [syntastic](https://github.com/scrooloose/syntastic.git), [vim-airline](https://github.com/vim-airline/vim-airline.git), [vim-fugitive](https://github.com/tpope/vim-fugitive.git), [vim-tmux](https://github.com/tmux-plugins/vim-tmux)
-* My favorite tmux configuration and some tmux plugins: [tmux-prefix-highlight](https://github.com/tmux-plugins/tmux-prefix-highlight.git), [tmux-copycat](https://github.com/tmux-plugins/tmux-copycat), [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect) 
+* My favorite tmux configuration and some tmux plugins: [tmux-prefix-highlight](https://github.com/tmux-plugins/tmux-prefix-highlight.git), [tmux-copycat](https://github.com/tmux-plugins/tmux-copycat), [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect), [tmux-urlview](https://github.com/tmux-plugins/tmux-urlview)
 * and many more ;)
 
 ## Installation
@@ -41,4 +41,4 @@ This repo is a store my personal Debian and macOS dotfiles.
 ## Dependencies
 ### macOS
 * tmux: To show mem, cpu, load stats, you have to install tmux-mem-cpu-load (https://github.com/thewtex/tmux-mem-cpu-load)
-
+* tmux-urlview: brew install urlview extract_url
