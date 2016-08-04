@@ -11,12 +11,22 @@ U| |_| |\.-,_| |_| | /| |\  \|  _|/     | |    \| |/__  | |___  u___) |
 
 ## Overview
 
-This repo is a store for my dotfiles.  
+This repo is a store my personal Debian and macOS dotfiles. 
+
+***Feel free to use it. Be creative to enhance it - and share it!***
 
 It contains a utility ([dfm](https://github.com/justone/dfm)) to help with managing and updating your dotfiles.
 For more information, check out the [wiki](http://github.com/justone/dotfiles/wiki).
 
-## Install
+## Features
+* Dotfile handling via [dfm](https://github.com/justone/dfm) utility.
+* All vim, tmux, ... plugins are included as git-submodule. So you have the lastest version everytime you update via *udot* command.
+* [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh.git) with fantastic [Cobalt2 theme](https://github.com/wesbos/Cobalt2-iterm.git).
+* A useful vim configuration with pathogen plugin manager and some plugins: [syntastic](https://github.com/scrooloose/syntastic.git), [vim-airline](https://github.com/vim-airline/vim-airline.git), [vim-fugitive](https://github.com/tpope/vim-fugitive.git)
+* My favorite tmux configuration and some tmux plugins: [tmux-prefix-highlight](https://github.com/tmux-plugins/tmux-prefix-highlight.git), [tmux-copycat](https://github.com/tmux-plugins/tmux-copycat) 
+* and many more ;)
+
+## Installation
 
     $ cd ~
     $ git clone https://github.com/Eragos/dotfiles.git .dotfiles
@@ -26,17 +36,10 @@ For more information, check out the [wiki](http://github.com/justone/dotfiles/wi
     $ ./bin/dfm install 
 
 ## Update
-
-	$ cd ~/.dotfiles/
-	$ git pull
-	$ bin/dfm install 
-
-	or
 	$ updot
 
 
 ## Dependencies
-
-tmux: To show mem, cpu, load stats, you have to install tmux-mem-cpu-load (https://github.com/thewtex/tmux-mem-cpu-load)
-
+### macOS
+* tmux: To show mem, cpu, load stats, you have to install tmux-mem-cpu-load (https://github.com/thewtex/tmux-mem-cpu-load)
 
