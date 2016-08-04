@@ -10,3 +10,6 @@
 [submodule "misc/Cobalt2-iterm"]
 	path = misc/Cobalt2-iterm
 	url = https://github.com/wesbos/Cobalt2-iterm.git
+[submodule ".vim/bundle/syntastic"]
+	path = .vim/bundle/syntastic
+	url = https://github.com/scrooloose/syntastic.git
