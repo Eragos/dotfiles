@@ -1,4 +1,5 @@
 *.sublime-workspace
 /.config/mc/hotlist
+/.tmux/resurrect
 /.vim/.netrwhist
 /tmux.start.sh
