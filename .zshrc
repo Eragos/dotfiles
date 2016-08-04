@@ -64,4 +64,8 @@ source $ZSH/oh-my-zsh.sh
 [[ -f "$HOME/.dotfiles/functions" ]] && source "$HOME/.dotfiles/functions"
 [[ -f "$HOME/.dotfiles/.commonrc" ]] && source "$HOME/.dotfiles/.commonrc"
 
+# not saving history immediately
+setopt noincappendhistory
+setopt nosharehistory
+
 . $HOME/.shellrc.load
