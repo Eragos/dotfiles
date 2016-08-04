@@ -20,6 +20,7 @@ udot() {
   echo -e ""
 
   echo -e "Update submodules..."
+  git submodule init
   git submodule update
   echo -e ""
 
