@@ -36,4 +36,5 @@ dotfiles.sublime-workspace skip
 functions skip
 misc skip
 README.md skip
+screenshot skip
 tmux.start.sh skip

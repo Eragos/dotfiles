@@ -15,8 +15,7 @@ This repo is a store my personal Debian and macOS dotfiles.
 
 ***Feel free to use it. Be creative to enhance it - and share it!***
 
-It contains a utility ([dfm](https://github.com/justone/dfm)) to help with managing and updating your dotfiles.
-For more information, check out the [wiki](http://github.com/justone/dotfiles/wiki).
+![tmux and vim](screenshot/screenshot.png?raw=true  = 250x "tmux and vim")
 
 ## Features
 * Dotfile handling via [dfm](https://github.com/justone/dfm) utility.
