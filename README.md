@@ -20,7 +20,10 @@ For more information, check out the [wiki](http://github.com/justone/dotfiles/wi
 
     $ cd ~
     $ git clone https://github.com/Eragos/dotfiles.git .dotfiles
-    $ .dotfiles/bin/dfm install 
+    $ cd .dotfiles
+    $ git submodule init
+    $ git submodule update
+    $ ./bin/dfm install 
 
 ## Update
 

@@ -19,6 +19,10 @@ udot() {
   echo -e "$info"
   echo -e ""
 
+  echo -e "Update submodules..."
+  git submodule update
+  echo -e ""
+
   if [ -z "$status" ]; then
     echo -e "Local changes:"
     echo -e "$gstatus"
