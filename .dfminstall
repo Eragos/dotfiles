@@ -31,6 +31,7 @@ bin/dfm chmod 0755
 aliases skip
 docker.bashrc skip
 dotfiles.sublime-project skip
+dotfiles.sublime-workspace skip
 functions skip
 README.md skip
 tmux.start.sh skip
