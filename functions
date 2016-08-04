@@ -19,11 +19,6 @@ udot() {
   echo -e "$info"
   echo -e ""
 
-  echo -e "Update submodules..."
-  git submodule init
-  git submodule update
-  echo -e ""
-
   if [ -z "$status" ]; then
     echo -e "Local changes:"
     echo -e "$gstatus"
@@ -40,6 +35,10 @@ udot() {
     source ~/.dotfiles/functions
     cd $cwd
   fi
+  echo -e ""
+  echo -e "Update submodules..."
+  git submodule init
+  git submodule update
   echo -e ""
 }
 
