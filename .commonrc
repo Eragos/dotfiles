@@ -12,3 +12,7 @@ if [ ! "$TERM_PROGRAM" = "iTerm.app" ]; then
         (tmux ls | grep -vq attached && tmux -2 attach-session -t main) ||  tmux -2 new-session -s main
     fi
 fi
+
+# use ~/.commonrc.local for local changes, proxy etc.
+[[ -f "$HOME/.commonrc.local" ]] && source "$HOME/.commonrc.local"
+
