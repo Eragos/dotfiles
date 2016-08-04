@@ -18,7 +18,7 @@ This repo is a store my personal Debian and macOS dotfiles.
 ![tmux and vim](screenshot/screenshot.png?raw=true  = 250x "tmux and vim")
 
 ## Features
-* Dotfile handling via [dfm](https://github.com/justone/dfm) utility.
+* Dotfile handling via [dotfiles manager (dfm)](https://github.com/justone/dfm).
 * All vim, tmux, ... plugins are included as git-submodule. So you have the lastest version everytime you update via *udot* command.
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh.git) with fantastic [Cobalt2 theme](https://github.com/wesbos/Cobalt2-iterm.git).
 * A useful vim configuration with pathogen plugin manager and some plugins: [syntastic](https://github.com/scrooloose/syntastic.git), [vim-airline](https://github.com/vim-airline/vim-airline.git), [vim-fugitive](https://github.com/tpope/vim-fugitive.git)
