@@ -48,5 +48,23 @@ For easy update the complete dotfiles (inlc. all submodules) you can use *udot* 
 * tmux: To show mem, cpu, load stats, you have to install tmux-mem-cpu-load (https://github.com/thewtex/tmux-mem-cpu-load)
 * tmux-urlview: brew install urlview extract_url
 
-## Dependencies
+## Feedback
 Suggestions, corrections or improvements are welcome!
+
+## tmux
+**Tip:** On macOS you can configure the Caps-lock key acting as Ctrl key. So Caps-lock is just beside a and the prefix Ctrl+a is just a fingetip away :-)
+
+Shortcut | Command
+---------| ----------------------------------------------------
+Ctrl+a r | reload tmux configuration
+Ctrl+a R | reorder windows
+Ctrl+a Ctrl+a | switch to last window
+-------- | ----------------------------------------------------
+Ctrl+a \| | split pane verticaly
+Ctrl+a - | split pane horizontaly
+-------- | ----------------------------------------------------
+Ctrl+a a | save tmux session
+Ctrl+a A | restore tmux session
+-------- | ----------------------------------------------------
+Ctrl+a m | ask for a manpage and open it on a new pane
+Ctrl+a M | ask for a manpage and open it on a new window
