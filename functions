@@ -40,6 +40,7 @@ udot() {
   git submodule init
   git submodule update
   echo -e ""
+  tmux source-file ~/.tmux.conf > /dev/null 2>&1
 }
 
 # will attach to existing tmux session, create new if one does not exist or just start bash if there is no tmux available.
