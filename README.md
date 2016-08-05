@@ -52,16 +52,18 @@ For easy update the complete dotfiles (inlc. all submodules) you can use *udot* 
 Suggestions, corrections or improvements are welcome!
 
 ## tmux
-**Tip:** On macOS you can configure the Caps-lock key acting as Ctrl key. So Caps-lock is just beside a and the prefix Ctrl+a is just a fingetip away :-)
+On macOS you can configure the Caps-lock key acting as Ctrl key. Caps-lock is just beside a and the prefix Ctrl+a is just a fingetip away. So in my configuration I changed the prefix key from Ctrl+b to more useful Ctrl+a
 
 Shortcut | Command
 ---------| ----------------------------------------------------
 Ctrl+a r | reload tmux configuration
 Ctrl+a R | reorder windows
 Ctrl+a Ctrl+a | switch to last window
-Ctrl+a \| | split pane verticaly
-Ctrl+a - | split pane horizontaly
+Ctrl+a \| | split pane vertical
+Ctrl+a - | split pane horizontal
 Ctrl+a a | save tmux session
 Ctrl+a A | restore tmux session
 Ctrl+a m | ask for a manpage and open it on a new pane
 Ctrl+a M | ask for a manpage and open it on a new window
+
+More @[Tmux Cheat Sheet & Quick Reference](https://tmuxcheatsheet.com/)
