@@ -59,12 +59,9 @@ Shortcut | Command
 Ctrl+a r | reload tmux configuration
 Ctrl+a R | reorder windows
 Ctrl+a Ctrl+a | switch to last window
--------- | ----------------------------------------------------
 Ctrl+a \| | split pane verticaly
 Ctrl+a - | split pane horizontaly
--------- | ----------------------------------------------------
 Ctrl+a a | save tmux session
 Ctrl+a A | restore tmux session
--------- | ----------------------------------------------------
 Ctrl+a m | ask for a manpage and open it on a new pane
 Ctrl+a M | ask for a manpage and open it on a new window
