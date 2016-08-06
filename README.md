@@ -34,6 +34,8 @@ This repo is a store my personal Debian and macOS dotfiles. I use zsh as default
 Some of configuration assets, needs [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) to be installed. You have to install the font only on the host side (your macOS or your Windows maschine).
 
 ### Installation of Nerd Fonts
+Here are only quick installation steps. For full reference visit [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts) on Github.
+
 #### Linux
 ```sh
 mkdir -p ~/.local/share/fonts
@@ -49,7 +51,7 @@ cd ~/Library/Fonts && curl -fLo "Droid Sans Mono for Powerline Nerd Font Complet
 Download [Droid Sans Mono for Powerline Nerd Font Complete Mono Windows Compatible.otf](https://github.com/ryanoasis/nerd-fonts/raw/master/patched-fonts/DroidSansMono/complete/Droid%20Sans%20Mono%20for%20Powerline%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.otf) and put it in your font folder.
 
 ### iTerm2 Setup non-ASCII Text Font
-I am currently using Source Code Pro as my default font, which does not include Powerline support. In addition to this, I do have nerd-fonts installed and configured to be used for non-ascii characters. 
+I'm currently using [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) as my default font, which does not include Powerline support. In addition to this, I do have nerd-fonts installed and configured to be used for non-ascii characters. 
 
 Then, you have configure the fonts in iTerm2:
 
