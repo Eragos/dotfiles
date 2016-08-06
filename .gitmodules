@@ -28,3 +28,6 @@
 [submodule ".tmux/plugins/tmux-urlview"]
 	path = .tmux/plugins/tmux-urlview
 	url = https://github.com/tmux-plugins/tmux-urlview.git
+[submodule ".vim/bundle/vim-devicons"]
+	path = .vim/bundle/vim-devicons
+	url = https://github.com/ryanoasis/vim-devicons.git
