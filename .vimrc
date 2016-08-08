@@ -310,9 +310,13 @@ let g:syntastic_check_on_wq = 0
 "⋅=>⋅nerdtree settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Open a NERDTree automatically when no files were specified
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+" autocmd StdinReadPre * let s:std_in=1
+" autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+" Show hidden files by default
+let NERDTreeShowHidden=1
+
+" map ctrl+n to toogle nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
