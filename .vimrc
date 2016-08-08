@@ -313,6 +313,9 @@ let g:syntastic_check_on_wq = 0
 " autocmd StdinReadPre * let s:std_in=1
 " autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
+" If only nerdtree is open, close vim
+" autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 " Show hidden files by default
 let NERDTreeShowHidden=1
 
