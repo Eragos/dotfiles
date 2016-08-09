@@ -75,6 +75,7 @@ For easy update the complete dotfiles (inlc. all submodules) you can use *udot* 
 ### macOS
 * tmux: To show mem, cpu, load stats, you have to install tmux-mem-cpu-load (https://github.com/thewtex/tmux-mem-cpu-load)
 * [tmux-urlview](https://github.com/tmux-plugins/tmux-urlview): brew install urlview extract_url
+* [Ack](http://beyondgrep.com/): brew install ack
 
 ## Feedback
 Suggestions, corrections or improvements are welcome!

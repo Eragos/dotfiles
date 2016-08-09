@@ -60,6 +60,9 @@ set smartcase
 " Highlight search results
 set hlsearch
 
+" Applies substitutions globally on lines
+set gdefault
+
 " Makes search act like search in modern browsers
 set incsearch
 
@@ -144,6 +147,12 @@ set tw=500
 set si "Smart indent
 set wrap "Wrap lines
 
+" wrap settings 
+"set wrap
+"set textwidth=79
+"set formatoptions=qrn1
+"set colorcolumn=85
+
 "set listchars to show special characters
 set list
 set listchars=tab:\┆\ ,trail:.,precedes:←,extends:→,nbsp:.,eol:¬,space:⋅
@@ -179,6 +188,9 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
+
+" open window verticaly
+nnoremap <leader>w <C-w>v<C-w>l
 
 " Close the current buffer
 map <leader>bd :Bclose<cr>
@@ -250,6 +262,9 @@ func! DeleteTrailingWS()
 endfunc
 autocmd BufWrite *.py :call DeleteTrailingWS()
 autocmd BufWrite *.coffee :call DeleteTrailingWS()
+
+" mapping for ack
+nnoremap <leader>a :Ack 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vimgrep searching and cope displaying
@@ -337,6 +352,9 @@ set pastetoggle=<F1>
 
 " Define Mouse Mode
 "set mouse=a
+
+" show relative line numbers
+set relativenumber
 
 " run pathogen to manage your 'runtimepath' with ease.  (https://github.com/tpope/vim-pathogen)
 " In practical terms, pathogen.vim makes it super easy to install plugins and runtime files in their own private directories.
