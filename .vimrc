@@ -322,7 +322,7 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"⋅=>⋅nerdtree settings
+"⋅=> nerdtree settings
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Open a NERDTree automatically when no files were specified
 " autocmd StdinReadPre * let s:std_in=1
@@ -336,6 +336,16 @@ let NERDTreeShowHidden=1
 
 " map ctrl+n to toogle nerdtree
 map <C-n> :NERDTreeToggle<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"⋅=> Gundo settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Toogle Gundo
+nnoremap <F5> :GundoToggle<CR>
+let g:gundo_width = 60
+let g:gundo_preview_height = 40
+let g:gundo_right = 1
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Misc

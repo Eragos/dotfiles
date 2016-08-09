@@ -24,7 +24,7 @@ This repo is a store my personal Debian and macOS dotfiles. I use zsh as default
 * All vim, tmux, ... plugins are included as git-submodule. So you have the lastest version everytime you update via *udot* command.
 * [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh.git) with fantastic [Cobalt2](https://github.com/wesbos/Cobalt2-iterm.git) theme.
 * Some helpfull [aliases](aliases) and [functions](functions) for [docker](https://www.docker.com/) and more.
-* A useful [vim](http://www.vim.org/) configuration with [pathogen](https://github.com/tpope/vim-pathogen) plugin manager and some plugins: [syntastic](https://github.com/scrooloose/syntastic.git), [vim-airline](https://github.com/vim-airline/vim-airline.git), [vim-fugitive](https://github.com/tpope/vim-fugitive.git), [vim-tmux](https://github.com/tmux-plugins/vim-tmux)
+* A useful [vim](http://www.vim.org/) configuration with [pathogen](https://github.com/tpope/vim-pathogen) plugin manager and some plugins: [syntastic](https://github.com/scrooloose/syntastic.git), [vim-airline](https://github.com/vim-airline/vim-airline.git), [vim-fugitive](https://github.com/tpope/vim-fugitive.git), [vim-tmux](https://github.com/tmux-plugins/vim-tmux), [vim-ack]( https://github.com/mileszs/ack.vim), [Gundo](http://sjl.bitbucket.org/gundo.vim/)
 * My favorite [tmux](https://tmux.github.io/) configuration and some tmux plugins: [tmux-prefix-highlight](https://github.com/tmux-plugins/tmux-prefix-highlight.git), [tmux-copycat](https://github.com/tmux-plugins/tmux-copycat), [tmux-resurrect](https://github.com/tmux-plugins/tmux-resurrect), [tmux-urlview](https://github.com/tmux-plugins/tmux-urlview)
 * and many more ;)
 * For local system-specific changes (proxy settings, etc.), you can create *~.commonrc.local* 
