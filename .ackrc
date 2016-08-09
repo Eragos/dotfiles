@@ -1,0 +1,35 @@
+# ack is a tool like grep, designed for programmers with large trees of heterogeneous source code
+# - to install ack, see http://betterthangrep.com/
+# - to use ack, launch terminal (mac osx) and type 'ack <some_keywords>'
+# - ack will search all files in the current directory & sub-directories
+ 
+# Sort the found files lexically.
+--sort-files
+ 
+# Highlight the matching text
+--color
+
+# Ignore case distinctions in PATTERN, only if PATTERN contains no upper case.
+--smart-case
+
+# Follow symlinks
+--follow
+
+# Print a filename heading above each file's results.
+--group
+
+# ignore directorys
+--ignore-dir=.idea/
+
+#make sure ack knows how to search common filetypes used in rails projects
+--type-add=css=.sass,.less,.scss
+--type-add=html=.html,.htm
+--type-set=coffeescript=.coffee
+--type-set=coffee=.coffee
+
+#make sure ack knows how to search common filetypes used in node.js projects
+--ignore-dir=node_modules
+--type-set=coffee=.coffee
+--type-set=jade=.jade
+--type-set=feature=.feature
+--type-set=json=.json
