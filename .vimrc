@@ -154,8 +154,8 @@ set wrap "Wrap lines
 "set colorcolumn=85
 
 "set listchars to show special characters
-set list
-set listchars=tab:\┆\ ,trail:.,precedes:←,extends:→,nbsp:.,eol:¬,space:⋅
+"set list
+"set listchars=tab:\┆\ ,trail:.,precedes:←,extends:→,nbsp:.,eol:¬,space:⋅
 hi SpecialKey ctermfg=8
 hi NonText ctermfg=8 guifg=gray
 
