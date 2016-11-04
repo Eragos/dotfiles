@@ -112,6 +112,10 @@ if has("gui_running")
     set guitablabel=%M\ %t
 endif
 
+" tell vim that my iTerm Terminal is capable of 256 colors even when running
+" inside tmux
+set t_Co=256
+
 " Set utf8 as standard encoding and en_US as the standard language
 set encoding=utf8
 
