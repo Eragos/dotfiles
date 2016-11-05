@@ -67,7 +67,7 @@ dockersecure() {
    docker run -it --net host --pid host --cap-add audit_control -v /var/lib:/var/lib -v /var/run/docker.sock:/var/run/docker.sock -v /usr/lib/systemd:/usr/lib/systemd -v /etc:/etc --label docker_bench_security --rm docker/docker-bench-security
 }
 
-# WRK
+# wrk - a HTTP benchmarking tool - https://github.com/wg/wrk
 function wrk() {
    docker run --rm williamyeh/wrk --latency $1
 }
