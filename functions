@@ -57,7 +57,7 @@ dockersh() {
     docker exec -it $1 bash --rcfile /.docker.bashrc
 }
 
-#Docker: bash into running Docker container
+#Docker: Show Docker container logging
 dockerlog() {
     docker logs -f $1
 }
