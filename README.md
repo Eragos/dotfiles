@@ -60,7 +60,7 @@ Then, you have configure the fonts in iTerm2:
 ## Installation
 
     $ apt-get update
-    $ apt-install git tmux zsh ack
+    $ apt-install git tmux zsh ack-grep
     $
     $ cd ~
     $ git clone https://github.com/Eragos/dotfiles.git .dotfiles
