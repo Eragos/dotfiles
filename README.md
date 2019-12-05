@@ -68,6 +68,8 @@ Then, you have configure the fonts in iTerm2:
     $ git submodule init
     $ git submodule update
     $ ./bin/dfm install 
+    $ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.dotfiles/.fzf
+    $ ~/.dotfiles/.fzf/install
 
 ## Update
 For easy update the complete dotfiles (inlc. all submodules) you can use *udot* command:
