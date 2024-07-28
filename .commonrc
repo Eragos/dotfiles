@@ -15,4 +15,6 @@ fi
 
 # use ~/.commonrc.local for local changes, proxy etc.
 [[ -f "$HOME/.commonrc.local" ]] && source "$HOME/.commonrc.local"
+echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/eragos/.zprofile
 
+eval "$(/opt/homebrew/bin/brew shellenv)"
