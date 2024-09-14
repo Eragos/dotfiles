@@ -27,10 +27,10 @@ DISABLE_AUTO_UPDATE="true"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
+COMPLETION_WAITING_DOTS="true"
 
 # Uncomment the following line if you want to disable marking untracked files
 # under VCS as dirty. This makes repository status check for large repositories
@@ -49,11 +49,14 @@ DISABLE_AUTO_UPDATE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages git docker sublime sudo)
+plugins=(colored-man-pages git docker sublime sudo zsh-bitwarden)
 
 # User configuration
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME/bin:"
+export BW_CLIENTID="user.3f9a1ec0-9e1c-4eed-aae6-b59e7e5c2b4f"
+export BW_CLIENTSECRET="YblTE9IG1f55OH6NYMvIH4XOsGnxRv"
+
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/homebrew/bin/brew:$HOME/bin:"
 
 source $ZSH/oh-my-zsh.sh
 
@@ -71,3 +74,6 @@ setopt nosharehistory
 . $HOME/.shellrc.load
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
