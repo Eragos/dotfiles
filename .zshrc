@@ -15,7 +15,7 @@ ZSH_THEME="../../misc/Cobalt2-iterm/cobalt2"
 # HYPHEN_INSENSITIVE="true"
 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-DISABLE_AUTO_UPDATE="true"
+#DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
 # export UPDATE_ZSH_DAYS=13
@@ -49,7 +49,7 @@ COMPLETION_WAITING_DOTS="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages git docker sublime sudo zsh-bitwarden)
+plugins=(colored-man-pages git docker sublime sudo)
 
 # User configuration
 
@@ -66,6 +66,10 @@ source $ZSH/oh-my-zsh.sh
 # load functions 
 [[ -f "$HOME/.dotfiles/functions" ]] && source "$HOME/.dotfiles/functions"
 [[ -f "$HOME/.dotfiles/.commonrc" ]] && source "$HOME/.dotfiles/.commonrc"
+
+# ntfy
+eval "$(ntfy shell-integration)"
+export AUTO_NTFY_DONE_IGNORE="vim screen meld"
 
 # not saving history immediately
 setopt noincappendhistory

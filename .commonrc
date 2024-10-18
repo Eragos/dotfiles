@@ -1,7 +1,6 @@
 
 # Solarized (mostly) dark skin for Midnight Commander
 export MC_SKIN=$HOME/.config/mc/skins/solarized.ini
-
 export EDITOR=vim
 
 [[ -f "$HOME/.dotfiles/aliases" ]] && source "$HOME/.dotfiles/aliases"
@@ -15,6 +14,5 @@ fi
 
 # use ~/.commonrc.local for local changes, proxy etc.
 [[ -f "$HOME/.commonrc.local" ]] && source "$HOME/.commonrc.local"
-echo 'eval $(/opt/homebrew/bin/brew shellenv)' >> /Users/eragos/.zprofile
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
