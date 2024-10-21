@@ -84,6 +84,5 @@ export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 
 # tmux starten
 if [ "$TMUX" = "" ]; then exec tmux; fi
-
 clear && udot
 

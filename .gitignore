@@ -6,4 +6,4 @@
 /.vim/.netrwhist
 /tmux.start.sh
 iTerm2
-.fzf/**
+/.fzf/**
