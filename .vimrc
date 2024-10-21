@@ -376,7 +376,7 @@ set pastetoggle=<F1>
 "set mouse=a
 
 " show relative line numbers
-set relativenumber
+"set relativenumber
 
 " run pathogen to manage your 'runtimepath' with ease.  (https://github.com/tpope/vim-pathogen)
 " In practical terms, pathogen.vim makes it super easy to install plugins and runtime files in their own private directories.
