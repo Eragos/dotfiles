@@ -83,6 +83,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 
 # tmux starten
-if [ "$TMUX" = "" ]; then exec tmux; fi
-clear && udot
+#if [ "$TMUX" = "" ]; then exec tmux; fi
+#clear && udot
 
