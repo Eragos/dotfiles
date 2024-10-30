@@ -1,8 +1,8 @@
 *.sublime-workspace
+.config/mc/hotlist
+.fzf/
 .tmux.conf.bak
-/.config/mc/hotlist
-.fzf/**
-/.tmux/resurrect
-/.vim/.netrwhist
-/tmux.start.sh
+.tmux/resurrect
+.vim/.netrwhist
 iTerm2
+tmux.start.sh
