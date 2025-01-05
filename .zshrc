@@ -83,6 +83,12 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 
 # tmux starten
-#if [ "$TMUX" = "" ]; then exec tmux; fi
-#clear && udot
+if [ "$TMUX" = "" ]; then exec tmux; fi
+clear && udot
 
+
+PATH="/Users/eragos/perl5/bin${PATH:+:${PATH}}"; export PATH;
+PERL5LIB="/Users/eragos/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
+PERL_LOCAL_LIB_ROOT="/Users/eragos/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
+PERL_MB_OPT="--install_base \"/Users/eragos/perl5\""; export PERL_MB_OPT;
+PERL_MM_OPT="INSTALL_BASE=/Users/eragos/perl5"; export PERL_MM_OPT;
