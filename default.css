@@ -1,0 +1,12 @@
+/* Safari CSS */
+
+
+/* https://github.com/Born2Root/Fast-Font */
+@font-face {
+    font-family: FastFont;
+    src: url(~/.dotfiles/font/Fast_Sans.ttf);
+}
+
+* {
+    font-family: FastFont !important;
+  }
