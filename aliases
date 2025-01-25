@@ -35,3 +35,5 @@ alias tmux='tmux -2'
 alias view='vim -p -R'
 alias vp='vim -p'
 alias cat='bat'
+
+alias tig='tig --all'
