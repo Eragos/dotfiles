@@ -37,3 +37,4 @@ alias vp='vim -p'
 alias cat='bat'
 
 alias tig='tig --all'
+alias yy=yt-dlp
