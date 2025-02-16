@@ -52,9 +52,7 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(colored-man-pages git docker sublime sudo)
 
 # User configuration
-
-export BW_CLIENTID="user.3f9a1ec0-9e1c-4eed-aae6-b59e7e5c2b4f"
-export BW_CLIENTSECRET="YblTE9IG1f55OH6NYMvIH4XOsGnxRv"
+source .api-keys
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/homebrew/bin/brew:$HOME/bin:"
 
