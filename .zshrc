@@ -84,6 +84,8 @@ export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 if [ "$TMUX" = "" ]; then exec tmux; fi
 clear && udot
 
+#brew update
+export HOMEBREW_AUTO_UPDATE_SECS="86400"
 
 PATH="/Users/eragos/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/Users/eragos/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
