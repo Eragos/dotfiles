@@ -8,6 +8,7 @@ alias ~='cd ~'
 # shortcuts
 alias d='du -h -d=1'
 alias g='git'
+alias history='history -E'
 alias h='history'
 alias ipt='iptables -L -n --line-numbers'
 alias nginxtest='docker exec -it nginx nginx -t'
