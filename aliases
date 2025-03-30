@@ -29,18 +29,20 @@ else # OS X `ls`
 	colorflag="-G"
 fi
 
-#alias la='ls -laF ${colorflag}'
-#alias ls='ls -Fh ${colorflagI}'
-
-alias ls='eza $eza_params'
-alias l='eza --git-ignore $eza_params'
-alias ll='eza --all --header --long $eza_params'
-alias llm='eza --all --header --long --sort=modified $eza_params'
-#alias la='eza -lbhHigUmuSa'
-alias la='eza -lbhHgma'
-alias lx='eza -lbhHigUmuSa@'
-alias lt='eza --tree $eza_params'
-alias tree='eza --tree $eza_params'
+if [ -f /opt/homebrew/bin/eza ]; then
+	alias ls='eza $eza_params'
+	alias l='eza --git-ignore $eza_params'
+	alias ll='eza --all --header --long $eza_params'
+	alias llm='eza --all --header --long --sort=modified $eza_params'
+	#alias la='eza -lbhHigUmuSa'
+	alias la='eza -lbhHgma'
+	alias lx='eza -lbhHigUmuSa@'
+	alias lt='eza --tree $eza_params'
+	alias tree='eza --tree $eza_params'
+else
+	alias la='ls -laF ${colorflag}'
+	alias ls='ls -Fh ${colorflagI}'
+fi
 
 alias tmux='tmux -2'
 alias view='vim -p -R'
