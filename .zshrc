@@ -40,7 +40,7 @@ COMPLETION_WAITING_DOTS="true"
 # Uncomment the following line if you want to change the command execution time
 # stamp shown in the history command output.
 # The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="dd.mm.yyyy"
+HIST_STAMPS="dd.mm.yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -50,17 +50,11 @@ COMPLETION_WAITING_DOTS="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(colored-man-pages git docker sublime sudo zsh-eza)
-
 # ansible brew colorize common-aliases direnv dnf fig tmux zsh-navigation-tools zsh-syntax-highliting 
 
 # User configuration
-source .api-keys
-
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/homebrew/bin/brew:$HOME/bin:$HOME/.dotfiles/scripte:"
-
 source $ZSH/oh-my-zsh.sh
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
@@ -69,9 +63,24 @@ source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 [[ -f "$HOME/.dotfiles/functions" ]] && source "$HOME/.dotfiles/functions"
 [[ -f "$HOME/.dotfiles/.commonrc" ]] && source "$HOME/.dotfiles/.commonrc"
 
-# ntfy
-eval "$(ntfy shell-integration)"
-export AUTO_NTFY_DONE_IGNORE="vim screen meld"
+if [[ $OSTYPE == 'darwin'* ]]; then
+	# load private api-keys
+	source .api-keys
+
+	# ntfy
+	eval "$(ntfy shell-integration)"
+	export AUTO_NTFY_DONE_IGNORE="vim screen meld"
+
+	# some homebrew things
+	source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+	source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+	test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+	[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+	export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
+	export HOMEBREW_AUTO_UPDATE_SECS="86400"
+fi
 
 # not saving history immediately
 setopt noincappendhistory
@@ -79,17 +88,9 @@ setopt nosharehistory
 
 . $HOME/.shellrc.load
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
-
 # tmux starten
 if [ "$TMUX" = "" ]; then exec tmux; fi
 clear && udot
-
-#brew update
-export HOMEBREW_AUTO_UPDATE_SECS="86400"
 
 PATH="/Users/eragos/perl5/bin${PATH:+:${PATH}}"; export PATH;
 PERL5LIB="/Users/eragos/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
