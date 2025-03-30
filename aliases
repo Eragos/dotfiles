@@ -48,4 +48,5 @@ alias vp='vim -p'
 alias cat='bat'
 
 alias tig='tig --all'
+alias lgit='lazygit'
 alias yy=yt-dlp
