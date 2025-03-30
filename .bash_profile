@@ -6,7 +6,7 @@
 [ -z "$ZSH_VERSION" ] && export SHELL=/bin/zsh && exec /bin/zsh -l
 
 # path
-PATH=$PATH:$HOME/bin:
+PATH=$PATH:$HOME/bin:$HOME/.dotfiles/scripte:
 
 # colors
 export CLICOLOR=1

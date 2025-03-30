@@ -56,7 +56,7 @@ plugins=(colored-man-pages git docker sublime sudo zsh-eza)
 # User configuration
 source .api-keys
 
-export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/homebrew/bin/brew:$HOME/bin:"
+export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/homebrew/bin/brew:$HOME/bin:$HOME/.dotfiles/scripte:"
 
 source $ZSH/oh-my-zsh.sh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh

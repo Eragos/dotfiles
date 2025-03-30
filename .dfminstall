@@ -26,6 +26,8 @@ bin/dfm chmod 0755
 .tmux/sidebar.tmux 0755
 .tmux/zoom 0755
 
+scripte/README 0644
+
 .dotfiles/.iterm2 skip
 .DS_Store skip
 .gitmodules skip
