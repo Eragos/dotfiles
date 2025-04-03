@@ -383,6 +383,14 @@ set pastetoggle=<F1>
 execute pathogen#infect()
 " enable powerline fonts
 let g:airline_powerline_fonts = 1
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PLUGINS
+"
+call plug#begin()
+" List your plugins here
+Plug 'tpope/vim-sensible'
+Plug 'voldikss/vim-floaterm'
+" call plug#end()
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Helper functions
