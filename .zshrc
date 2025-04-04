@@ -89,7 +89,7 @@ setopt nosharehistory
 . $HOME/.shellrc.load
 
 # tmux starten
-if [ "$TMUX" = "" ]; then exec tmux; fi
+#if [ "$TMUX" = "" ]; then exec tmux; fi
 clear && udot
 
 PATH="/Users/eragos/perl5/bin${PATH:+:${PATH}}"; export PATH;
