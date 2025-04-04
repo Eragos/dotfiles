@@ -49,3 +49,9 @@
 [submodule ".vim/bundle/vim-markdown"]
 	path = .vim/bundle/vim-markdown
 	url = https://github.com/plasticboy/vim-markdown.git
+[submodule ".vim/plugged/vim-floaterm"]
+	path = .vim/plugged/vim-floaterm
+	url = https://github.com/voldikss/vim-floaterm.git
+[submodule ".vim/plugged/vim-sensible"]
+	path = .vim/plugged/vim-sensible
+	url = https://github.com/tpope/vim-sensible.git
