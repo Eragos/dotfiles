@@ -1,3 +1,4 @@
+echo ".zshrc"
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 
@@ -49,7 +50,7 @@ HIST_STAMPS="dd.mm.yyyy"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages git docker sublime sudo zsh-eza)
+plugins=(colored-man-pages git docker sublime sudo zsh-eza git-prompt)
 # ansible brew colorize common-aliases direnv dnf fig tmux zsh-navigation-tools zsh-syntax-highliting 
 
 # User configuration
