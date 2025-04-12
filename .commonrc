@@ -9,11 +9,11 @@ cd /opt/homebrew/bin
 [[ -f "$HOME/.dotfiles/aliases" ]] && source "$HOME/.dotfiles/aliases"
 [[ -f "$HOME/.iterm2_shell_integration.zsh" ]] && source "$HOME/.iterm2_shell_integration.zsh"
 
-if [ ! "$TERM_PROGRAM" = "iTerm.app" ]; then
-    if [ -z "$TMUX" ]; then
-        (tmux ls | grep -vq attached && tmux -2 attach-session -t main) ||  tmux -2 new-session -s main
-    fi
-fi
+#if [ ! "$TERM_PROGRAM" = "iTerm.app" ]; then
+#    if [ -z "$TMUX" ]; then
+#        (tmux ls | grep -vq attached && tmux -2 attach-session -t main) ||  tmux -2 new-session -s main
+#    fi
+#fi
 
 # use ~/.commonrc.local for local changes, proxy etc.
 [[ -f "$HOME/.commonrc.local" ]] && source "$HOME/.commonrc.local"
