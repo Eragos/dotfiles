@@ -4,7 +4,10 @@
 export MC_SKIN=$HOME/.config/mc/skins/solarized.ini
 export EDITOR=vim
 
-cd /opt/homebrew/bin
+
+if [ -d "/opt/homebrew/bin" ]; then
+    cd /opt/homebrew/bin
+fi
 
 [[ -f "$HOME/.dotfiles/aliases" ]] && source "$HOME/.dotfiles/aliases"
 [[ -f "$HOME/.iterm2_shell_integration.zsh" ]] && source "$HOME/.iterm2_shell_integration.zsh"
