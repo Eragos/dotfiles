@@ -17,7 +17,7 @@ This repo is a store my personal Debian and macOS dotfiles. I use zsh as default
 
 **Warning:** These dotfiles reflect my personal settings. If you want to use it - wellcome! But review the settings and remove things, you don't want to need. Do not use it blindly. Use at your own risk!
 
-![tmux and vim](screenshot/screenshot.png?raw=true  = 250x "tmux and vim")
+![tmux and vim](https://raw.githubusercontent.com/Eragos/dotfiles/refs/heads/master/screenshot/screenshot.png)
 
 ## Features
 * Dotfile handling via [dotfiles manager (dfm)](https://github.com/justone/dfm). Install, update and uninstall of dotfiles is quiet easy.
@@ -55,7 +55,7 @@ I'm currently using [Source Code Pro](https://github.com/adobe-fonts/source-code
 
 Then, you have configure the fonts in iTerm2:
 
-![iTerm2 Setup non-ASCII Text Font](screenshot/iTerm2_FontConfiguration.png?raw=true  = 250x "iTerm2 Setup non-ASCII Text Font")
+![iTerm2 Setup non-ASCII Text Font](https://raw.githubusercontent.com/Eragos/dotfiles/refs/heads/master/screenshot/iTerm2_FontConfiguration.png)
 
 ## Installation
 
