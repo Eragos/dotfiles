@@ -53,3 +53,4 @@ alias cat='bat'
 alias tig='tig --all'
 alias lgit='lazygit'
 alias yy=yt-dlp
+alias he='home && exit && exit'
