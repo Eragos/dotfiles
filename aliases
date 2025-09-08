@@ -40,6 +40,8 @@ if [ -f /opt/homebrew/bin/eza ]; then
 	alias lx='eza -lbhHigUmuSa@'
 	alias lt='eza --tree $eza_params'
 	alias tree='eza --tree $eza_params'
+	alias lsize='eza --long --total-size --sort=size $eza_params'
+
 else
 	alias la='ls -laF ${colorflag}'
 	alias ls='ls -Fh ${colorflagI}'

@@ -51,14 +51,11 @@ typeset -A ZI
 ZI[BIN_DIR]="${HOME}/.zi/bin"
 source "${ZI[BIN_DIR]}/zi.zsh"
 
-#zi ice has'eza' atinit'AUTOCD=1'
-#zi light z-shell/zsh-eza
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(colored-man-pages git docker sublime sudo zsh-eza git-prompt)
+plugins=(colored-man-pages git docker sublime sudo git-prompt)
 # ansible brew colorize common-aliases direnv dnf fig tmux zsh-navigation-tools zsh-syntax-highliting 
 
 # User configuration
