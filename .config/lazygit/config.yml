@@ -1,14 +1,16 @@
 os:
   editCommand: 'floterm'
-
 gui:
+  showRandomTip: false
+  showCommandLog: true
   theme:
     selectedLineBgColor:
       - underline
     selectedRangeBgColor:
       - underline
-
 git:
-  paging:
-    colorArg: never
-    pager: delta --dark --paging=never
+  overrideGpg: true # https://github.com/jesseduffield/lazygit/discussions/3948
+  pagers:
+    - colorArg: always
+      pager: delta --dark --paging=never
+promptToReturnFromSubprocess: false
