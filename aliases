@@ -18,10 +18,18 @@ alias nginxreload='docker exec -it nginx /bin/bash -c "/usr/sbin/nginx -t && /us
 # defaults
 alias df='df -h'
 
-alias grep='grep --color=auto'
-alias fgrep='fgrep --color=auto'
-alias egrep='egrep --color=auto'
+#alias grep='grep --color=auto'
+#alias fgrep='fgrep --color=auto'
+#alias egrep='egrep --color=auto'
 
+# https://github.com/BurntSushi/ripgrep
+alias grep=rg
+
+# fd → find replacement (https://github.com/sharkdp/fd
+fda='fd -IH'
+
+# https://osxdaily.com/2026/01/22/btop-for-macos-is-an-excellent-terminal-system-resource-monitor/
+alias top=btop
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
