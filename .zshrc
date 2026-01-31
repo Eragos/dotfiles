@@ -86,6 +86,11 @@ if [[ $OSTYPE == 'darwin'* ]]; then
 	[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 	export PATH="/opt/homebrew/opt/sqlite/bin:$PATH"
 	export HOMEBREW_AUTO_UPDATE_SECS="86400"
+
+  # ghostty
+	if [[ -n $GHOSTTY_RESOURCES_DIR ]]; then
+	  source "$GHOSTTY_RESOURCES_DIR"/shell-integration/zsh/ghostty-integration
+	fi
 fi
 
 # not saving history immediately
