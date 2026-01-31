@@ -3,6 +3,8 @@ os:
 gui:
   showRandomTip: false
   showCommandLog: true
+  expandFocusedSidePanel: true
+  expandedSidePanelWeight: 3
   theme:
     selectedLineBgColor:
       - underline
@@ -11,6 +13,5 @@ gui:
 git:
   overrideGpg: true # https://github.com/jesseduffield/lazygit/discussions/3948
   pagers:
-    - colorArg: always
-      pager: delta --dark --paging=never
+    - pager: delta --paging=never
 promptToReturnFromSubprocess: false
