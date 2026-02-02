@@ -40,10 +40,6 @@ window-padding-y = 0
 cursor-style = underline
 cursor-style-blink = true
 
-# MacOS configuration
-macos-option-as-alt = true
-macos-titlebar-style = tabs
-
 # Keybindings
 keybind = alt+s>r=reload_config
 keybind = alt+s>x=close_surface
