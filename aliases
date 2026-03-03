@@ -4,7 +4,7 @@ alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
 alias ~='cd ~'
-alias home='cd ~'
+alias home='clear && udot && cd ~ '
 
 # shortcuts
 alias d='du -h -d=1'
@@ -63,4 +63,4 @@ alias cat='bat'
 alias tig='tig --all'
 alias lgit='lazygit'
 alias yy=yt-dlp
-alias he='home && exit && exit'
+alias he='cd ~ && exit && exit'
