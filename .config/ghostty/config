@@ -19,7 +19,6 @@ fullscreen = false
 # Style → ghostty +list-themes
 background-opacity = 0.95
 background-blur-radius = 20
-#theme = Cobalt Next Dark
 theme = Cobalt2
 
 font-family = MonoLisa
