@@ -14,4 +14,6 @@ git:
   overrideGpg: true # https://github.com/jesseduffield/lazygit/discussions/3948
   pagers:
     - pager: delta --paging=never
+  ignoreWhitespaceInDiffView: false
+
 promptToReturnFromSubprocess: false
