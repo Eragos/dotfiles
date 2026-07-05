@@ -43,6 +43,9 @@ cursor-style-blink = true
 keybind = alt+s>r=reload_config
 keybind = alt+s>x=close_surface
 keybind = alt+s>n=new_window
+keybind = global:ctrl+shift+alt+cmd+a=toggle_quick_terminal
 
 # Features
 shell-integration = zsh
+
+scrollbar = system
