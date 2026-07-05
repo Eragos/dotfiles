@@ -62,6 +62,9 @@ plugins=(colored-man-pages git docker sublime sudo git-prompt)
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/homebrew/bin/brew:$HOME/bin:$HOME/.dotfiles/scripte:"
 source $ZSH/oh-my-zsh.sh
 
+# Git configuration
+export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
+
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
 
@@ -127,3 +130,15 @@ autoload -Uz _zi
 (( ${+_comps} )) && _comps[zi]=_zi
 # examples here -> https://wiki.zshell.dev/ecosystem/category/-annexes
 zicompinit # <- https://wiki.zshell.dev/docs/guides/commands
+
+# Ollama
+export OLLAMA_HOST="0.0.0.0:11434"
+#export OLLAMA_API_KEY=your_api_key
+
+# Claude Code Settings
+export ANTHROPIC_BASE_URL="http://localhost:11434"
+export ANTHROPIC_AUTH_TOKEN="ollama"
+export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
+
+# Ruby
+source /opt/homebrew/opt/chruby/share/chruby/auto.sh
