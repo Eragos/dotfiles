@@ -63,7 +63,7 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/opt/home
 source $ZSH/oh-my-zsh.sh
 
 # Git configuration
-export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
+export GIT_DISCOVERY_ACROSS_FILESYSTEM=0
 
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(lesspipe)"
@@ -142,3 +142,9 @@ export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
 
 # Ruby
 source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+
+# sshm - https://github.com/Gu1llaum-3/sshm
+source <(sshm completion zsh)
+
+# lazygit - https://lazygit.dev/docs/configuration/
+export EDITOR=subl
