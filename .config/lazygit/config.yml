@@ -1,5 +1,6 @@
 os:
   editCommand: 'floterm'
+
 gui:
   showRandomTip: false
   showCommandLog: true
@@ -10,10 +11,20 @@ gui:
       - underline
     selectedRangeBgColor:
       - underline
+    activeBorderColor:
+      - green
+      - bold
+  # showIcons: true
+  showFileIcons: true
+  nerdFontsVersion: "3"
+
 git:
   overrideGpg: true # https://github.com/jesseduffield/lazygit/discussions/3948
   pagers:
-    - pager: delta --paging=never
+    - pager: diff-so-fancy
+    # - pager: delta --dark --paging=never
+  commit:
+    signOff: false
   ignoreWhitespaceInDiffView: false
 
 promptToReturnFromSubprocess: false
