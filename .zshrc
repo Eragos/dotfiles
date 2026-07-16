@@ -94,6 +94,24 @@ if [[ $OSTYPE == 'darwin'* ]]; then
 	if [[ -n $GHOSTTY_RESOURCES_DIR ]]; then
 	  source "$GHOSTTY_RESOURCES_DIR"/shell-integration/zsh/ghostty-integration
 	fi
+
+	# Ruby
+	source /opt/homebrew/opt/chruby/share/chruby/auto.sh
+
+	# sshm - https://github.com/Gu1llaum-3/sshm
+	source <(sshm completion zsh)
+
+	# lazygit - https://lazygit.dev/docs/configuration/
+	export EDITOR=subl
+
+	# Ollama
+	export OLLAMA_HOST="0.0.0.0:11434"
+	#export OLLAMA_API_KEY=your_api_key
+
+	# Claude Code Settings
+	export ANTHROPIC_BASE_URL="http://localhost:11434"
+	export ANTHROPIC_AUTH_TOKEN="ollama"
+	export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
 fi
 
 # not saving history immediately
@@ -130,21 +148,3 @@ autoload -Uz _zi
 (( ${+_comps} )) && _comps[zi]=_zi
 # examples here -> https://wiki.zshell.dev/ecosystem/category/-annexes
 zicompinit # <- https://wiki.zshell.dev/docs/guides/commands
-
-# Ollama
-export OLLAMA_HOST="0.0.0.0:11434"
-#export OLLAMA_API_KEY=your_api_key
-
-# Claude Code Settings
-export ANTHROPIC_BASE_URL="http://localhost:11434"
-export ANTHROPIC_AUTH_TOKEN="ollama"
-export CLAUDE_CODE_DISABLE_NONESSENTIAL_TRAFFIC=1
-
-# Ruby
-source /opt/homebrew/opt/chruby/share/chruby/auto.sh
-
-# sshm - https://github.com/Gu1llaum-3/sshm
-source <(sshm completion zsh)
-
-# lazygit - https://lazygit.dev/docs/configuration/
-export EDITOR=subl
